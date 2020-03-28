@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 直角三角形
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write('★');
+            }
+            document.write('<br/>')
+        }
+
+        document.write('<hr/>')
+        // 倒直角三角形
+        for (let a = 1; a <= 10; a++) {
+            for (let b = 10; b >= a; b--) {
+                document.write('★')
+            }
+            document.write('<br/>')
+        }
+
+        document.write('<hr/>')
+        // 正方形
+        for (let c = 1; c <= 10; c++) {
+            for (let d = 1; d <= 10; d++) {
+                document.write('★')
+            }
+            document.write('<br/>')
+        }
+
+        document.write('<hr/>')
+        // 空心正方形
+        for (let e = 1; e <= 10; e++) {
+            if (e > 1 && e < 10) {
+                document.write('★&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;★')
+            }
+            else {
+                document.write('★★★★★★★★★★')
+            }
+            document.write('<br/>')
+        }
+
+        document.write('<hr/>')
+        // 等腰三角形
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10 - i; j++) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = 1; k <= 2 * i - 1; k++) {
+                document.write('★');
+            }
+            document.write('<br>');
+        }
+
+        document.write('<hr/>')
+        // 水平翻轉直角三角形
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 10; j > i; j--) {
+                document.write('&nbsp;&nbsp;&nbsp;');
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write('★')
+            }
+            document.write('<br>');
+        }
+
+        document.write('<hr/>')
+        // 倒水平翻轉直角三角形
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 10; j > i; j--) {
+                document.write('★');
+            }
+            for (let k = 1; k <= i; k++) {
+                document.write('&nbsp;&nbsp;&nbsp;')
+            }
+            document.write('<br>');
+        }
+
+    </script>
+</body>
+
+</html>
